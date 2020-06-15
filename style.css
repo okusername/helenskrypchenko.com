@@ -1,0 +1,816 @@
+*{
+    padding: 0;
+    margin: 0;
+    viewport-fit: contain;
+}
+
+@supports(padding:max(0px)) {
+    body, header, footer {
+        padding-left: min(0vmin, env(safe-area-inset-left));
+        padding-right: min(0vmin, env(safe-area-inset-right));
+    }
+}
+
+
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* mininal adequate screen width is 900px  */
+
+
+/* ################ figma ################ */
+
+h1{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 132px;
+    line-height: 132px;
+
+    font-size: 9.167vw;
+    line-height: 9.167vw;
+
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+h2{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 40px;
+
+    font-size: 2.917vw;
+    line-height: 2.778vw;
+
+
+    /* identical to box height, or 95% */
+
+    letter-spacing: 0.02em;
+}
+
+button{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    font-size: 1.111vw;
+    line-height: 1.389vw;
+
+
+    text-transform: uppercase;
+}
+
+a{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    font-size: 1.111vw;
+    line-height: 1.389vw;
+}
+
+p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+
+    font-size: 1.389vw;
+    line-height: 2.222vw;
+}
+
+
+
+
+
+
+
+
+/* ################ global ################ */
+
+h1{
+    padding: 10% 0%;
+    padding: 0.7em;
+    padding: 1em;
+    /* padding: 5em; */
+}  
+
+ul{
+    display: flex;
+}
+
+li{
+    align-self: center;
+}
+
+ul li{
+    display: inline;
+}
+
+ul li h2{
+    text-transform: none;
+}
+
+/* get here */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    border: none;
+    background-color: black;
+    /* 25/16 40/16 */
+    padding: 1.56em 2.5em;
+}
+
+button a{
+    color: white;
+}
+
+
+
+
+
+
+
+img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a img{
+    width: 100%;
+    height: 100%;
+
+    max-width: 1.25em;
+    margin-right: 0.166em;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+
+    max-width: 4.931vw;
+
+    margin-left: 165.7px;
+    margin-left: 11.55vw;
+    /* margin-right: 0.166em; */
+}
+
+
+
+
+
+
+
+a{
+    display: flex;
+}
+
+.vertical{
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
+.vertical a,
+.vertical p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    font-size: 1.111vw;
+    line-height: 1.389vw;
+    /* - 10 % */
+    font-size: 1.011vw;
+    line-height: 1.289vw;
+}
+
+.vertical li:last-child{
+    /* background-color: red; */
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################ header ################ */
+
+header{
+    width: 100%;
+}
+
+header nav{    
+    background-color: gainsboro;
+    height: 100px;
+    height: 6.944vw;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid black;
+}
+
+.logo,
+nav li a{
+    padding: 2.7em 1.87em;
+    padding: 1.7em 1.35em;
+    padding: 2.66em 1.9em;
+    padding: 2.6em 1.89em;
+    padding: 0;
+    margin: 2.6em 1.89em;;
+
+    text-transform: uppercase;
+}
+
+nav li button{
+    padding: 0;
+}
+
+
+
+
+
+
+/* ################ main ################ */
+
+main{
+    background-color: gainsboro;
+
+    width: 100%;
+    height: 100vw;
+    /* -6.944vw from header */
+    height: 93.056vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+main .top{
+    padding-top: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    margin-bottom: -0.31em;
+    z-index: 3;
+    position: relative;
+    /* position: relative must to use with z-index */
+}
+
+main .bottom{
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: auto;
+
+    margin-top: -0.56em;
+    z-index: 3;
+    position: relative;
+}
+
+main .project{
+    /* background-color: blue; */
+    width: 100%;
+    /* height: auto; */
+    display: flex;
+    justify-content: center;
+}
+
+main .space{
+    /* background-color: red; */
+    width: 10%;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main img{
+    min-width: 426px;
+    width: 426px;
+
+    min-width: 66.806vw;
+    min-height: auto;
+    width: 66.806vw;
+    height: auto;
+}
+
+
+
+
+
+
+
+main .vertical li{
+    padding: 0 3vw;
+}
+
+
+/* ################ article ################ */
+
+article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    width: 100%;
+    width: 79.306vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+
+    
+}
+
+article .project{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+article .content{
+    /* background-color: blue; */
+    display: flex;
+    align-items: flex-end;
+    /* align-items: space-between; */
+    justify-content: space-between;
+
+
+    min-width: 426px;
+    width: 426px;
+
+    min-width: 66.806vw;
+    min-height: auto;
+    width: 66.806vw;
+    height: auto;
+}
+
+
+article .top{
+    padding-top: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    margin-bottom: -1.3em;
+    z-index: 3;
+    position: relative;
+    /* position: relative must to use with z-index */
+}
+
+article ul li{
+    /* background-color: red; */
+    margin: 100px 0;
+    margin: 6.944vw 0;
+}
+
+article img{
+    min-width: 446 px;
+    width: 446px;
+
+    min-width: 30.972vw;
+    min-height: auto;
+    width: 30.972vw;
+    height: auto;
+}
+
+article .space{
+    /* background-color: red; */
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/* ################ section ################ */
+
+section{
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .featured{
+    /* background-color: pink; */
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+
+    align-content: center;
+
+
+
+    max-height: 470vw;
+    max-height: 490vw;
+    /* max-height: 6000px; */
+
+    /* max-height: must to use with mansory flex */
+}
+
+/* URA AAA AAAA EBANA V ROT ZARABOTALA
+.featured > :nth-child(3n+1){ order: 1; }
+.featured > :nth-child(3n+2){ order: 2; }
+.featured > :nth-child(3n){ order: 3; } */
+
+
+.featured > :nth-child(2n+1){ order: 1; }
+.featured > :nth-child(2n){ order: 2; }
+
+
+
+section .featured{
+    direction: rtl;
+}
+
+section .project{
+    direction: ltr;
+
+    width: 50%;
+    display: flex;
+
+    margin-bottom: 8.333vw;
+
+    width: 537px;
+    width: 37.292vw;
+    height: auto;
+}
+
+section .content{
+
+
+}
+
+section img{
+    min-width: 426px;
+    width: 426px;
+
+    min-width: 29.583vw;
+    min-height: auto;
+    width: 29.583vw;
+    height: auto;
+}
+
+section p{
+    max-width: 29.583vw;
+}
+
+
+
+
+section .space{
+    /* background-color: red; */
+    /* width: 20%; */
+    /* width: 20px; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: flex-end;
+}
+
+section .asymmetric{
+    height: 4vw;
+    margin-bottom: 0;
+}
+
+section h2{
+    /* 36/42 */
+    /* 24/42 */
+    margin: 0.85em 0 0.57em 0;
+    /* -17% */
+    margin: 0.68em 0 0.4em 0;
+
+
+}
+
+section h2{
+    width: 50%;
+    width: auto;
+    width: min-content;
+
+    /* display: block; */
+    /* float: left; */
+}
+
+
+
+
+section .vertical{
+    padding-left: 1em;
+}
+
+.number{
+    display: none;
+}
+
+
+
+
+/* ################ footer ################ */
+
+footer{
+    background-color: gainsboro;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer h1,
+footer h2,
+footer p{
+    /* background-color: red; */
+    padding: 0;
+    margin: 0;
+}
+
+footer h1{
+    padding: 13.889vw 0 6.944vw 0;
+}
+
+
+footer > ul{
+    padding-top: 4.167vw;
+    padding-bottom: 10.417vw;
+}
+
+
+footer nav{    
+    height: 100px;
+    height: 6.944vw;
+    width: 100%;
+    width: 79.306vw;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer nav button{
+    background-color: inherit;
+    padding-left: 0;
+}
+
+footer nav button a{
+    color: black;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+footer .credits{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+footer .cv,
+footer .credits{
+    margin: 0;
+}
+
+
+
+
+
+/* ################ states ################ */
+
+
+button a,
+footer nav a,
+a h2,
+header a:not(.logo){
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    padding-top: 0.556vw;
+    padding-bottom: 0.556vw;
+
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid transparent;
+}
+
+.vertical p,
+.vertical a{
+    padding-top: 5px;
+    padding-left: 5px;
+
+    padding-top: 0.347vw;
+    padding-left: 0.347vw;
+
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    border-left: 1px solid transparent;
+}
+
+
+footer nav a:not(.credits):hover,
+a h2:hover,
+header li a:not(.button):hover {
+    border-bottom: 2px solid black;
+    border-bottom: 2px solid red;
+    border-bottom: 2px solid #222222;
+}
+
+.vertical a:hover{
+    border-left: 2px solid black;
+    border-left: 2px solid red;
+    border-left: 1px solid #222222;
+}
+
+
+header button a:hover,
+header button:hover{
+    background-color: rgba(56 56 56);
+}
+
+
+
+
+/* ################ color ################ */
+
+a{
+    color: red;
+    color: #222222;
+}
+
+button a{
+    color: red;
+    /* color: #222222; */
+    color: white;
+}
+
+p{
+    color: red;
+    color: #222222;
+}
+
+h1{
+    color: red;
+    color: #222222;
+}
+
+h2{
+    color: red;
+    color: #222222;
+}
+
+header nav{
+    border-bottom: 2px solid red;
+    border-bottom: 2px solid #222222;
+}
+
+article{
+    border-bottom: 2px solid red;
+    border-bottom: 2px solid #222222;
+}
+
+footer nav{
+    border-top: 2px solid red;
+    border-top: 2px solid #222222;
+}
+
+button{
+    background-color: red;
+    background-color: #222222;
+}
+
+header nav{
+    background-color: red;
+    background-color: #E0E0E0;
+}
+
+footer nav{
+    background-color: red;
+    background-color: #E0E0E0;
+}
+
+main{
+    background-color: red;
+    background-color: #E0E0E0;
+}
+
+footer{
+    background-color: red;
+    background-color: #E0E0E0;
+}
+
+
+
+
+
+
+
+
+
+
+/* ################ mobile ################ */
+
+.burger{
+    display: none;
+}
+
+.mobile{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* to disable all headings */
+
+/* h1{ display: none; } */
+
+/* .featured > :nth-child(1){ display: none; } */
+
+
+
+
+
+
+
+
+
+
+/* ################ offtopic ################ */
+
+
+
+
+/* 
+
+
+
+1440 / 720
+
+1280 / 640
+
+1024 / 512
+
+720 / 360 
+
+
+
+
+
+
+
+
+*/
