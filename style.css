@@ -243,6 +243,7 @@ header nav{
     align-items: center;
 
     border-bottom: 2px solid black;
+    border-bottom: 0.139vw solid black;
 }
 
 .logo,
@@ -284,6 +285,9 @@ main{
 
 main .top{
     padding-top: auto;
+    padding-top: 80px;
+    padding-top: 5.556vw;
+
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
@@ -358,6 +362,7 @@ article{
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid black;
+    border-bottom: 0.139vw solid black;
 
     
 }
@@ -482,13 +487,10 @@ section .project{
 
     width: 537px;
     width: 37.292vw;
+    width: auto;
     height: auto;
 }
 
-section .content{
-
-
-}
 
 section img{
     min-width: 426px;
@@ -508,14 +510,22 @@ section p{
 
 
 section .space{
-    /* background-color: red; */
-    /* width: 20%; */
-    /* width: 20px; */
+    width: 50px;
+    width: 3.472vw;
     height: auto;
     display: flex;
-    justify-content: center;
     justify-content: flex-end;
 }
+
+section .vertical p{
+    /* padding-left: 1em; */
+    /* padding-left: 20px; */
+    margin: 1.389vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 
 section .asymmetric{
     height: 4vw;
@@ -544,9 +554,7 @@ section h2{
 
 
 
-section .vertical{
-    padding-left: 1em;
-}
+
 
 .number{
     display: none;
@@ -591,6 +599,7 @@ footer nav{
     width: 100%;
     width: 79.306vw;
     border-top: 2px solid black;
+    border-top: 0.139vw solid black;
     display: flex;
     justify-content: space-between;
 
@@ -637,10 +646,20 @@ header a:not(.logo){
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     border-bottom: 2px solid transparent;
+    border-bottom: 0.139vw solid transparent;
 }
 
-.vertical p,
-.vertical a{
+footer nav a:not(.credits):hover,
+a h2:hover,
+header li a:not(.button):hover {
+    border-bottom: 2px solid black;
+    border-bottom: 2px solid red;
+    border-bottom: 2px solid #222222;
+    border-bottom: 0.139vw solid #222222;
+}
+
+main .vertical p,
+main .vertical a{
     padding-top: 5px;
     padding-left: 5px;
 
@@ -650,21 +669,14 @@ header a:not(.logo){
     padding-top: 0.5em;
     padding-left: 0.5em;
     border-left: 1px solid transparent;
-}
-
-
-footer nav a:not(.credits):hover,
-a h2:hover,
-header li a:not(.button):hover {
-    border-bottom: 2px solid black;
-    border-bottom: 2px solid red;
-    border-bottom: 2px solid #222222;
+    border-left: 0.069vw solid transparent;
 }
 
 .vertical a:hover{
     border-left: 2px solid black;
     border-left: 2px solid red;
     border-left: 1px solid #222222;
+    border-left: 0.069vw solid #222222;
 }
 
 
@@ -707,16 +719,20 @@ h2{
 header nav{
     border-bottom: 2px solid red;
     border-bottom: 2px solid #222222;
+    border-bottom: 0.139vw solid #222222;
+
 }
 
 article{
     border-bottom: 2px solid red;
     border-bottom: 2px solid #222222;
+    border-bottom: 0.139vw solid #222222;
 }
 
 footer nav{
     border-top: 2px solid red;
     border-top: 2px solid #222222;
+    border-top: 0.139vw solid #222222;
 }
 
 button{
