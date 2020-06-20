@@ -371,6 +371,36 @@ footer .border{
     /* margin-top: max(60px, 10.417vw) */
 }
 
+
+
+
+/* ############ padding ############ */
+
+header nav li a:not(.cv),
+footer nav li a{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid transparent;
+}
+
+main .vertical p,
+.vertical a{
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    border-left: 2px solid transparent;
+}
+
+.menu ul li h1,
+li h2,
+section h2{
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    border-bottom: 2px solid transparent;
+}
+
+
+
+
 /* ############ menu ############ */
 
 .menu {

@@ -506,6 +506,7 @@
         line-height: 2em;
         
         text-transform: uppercase;
+        padding: 0;
     }
 
     .logo img{
