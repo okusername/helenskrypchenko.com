@@ -1,112 +1,272 @@
-@media only screen and (min-width: 480px){
-}
-@media only screen and (min-width: 501px){
-    *{
-        /* background-color: red; */
-    }
-    .burger{
-        display: none;
-    }
-
-    .mobile{
-        display: none;
-    }
-}
 
 
-@media only screen and (max-width: 480px){
-}
-@media only screen and (max-width: 500px){
-    *{
-        padding: 0;
-        margin: 0;
 
-    }
+/* ######## 1024 to 768 ######## */
+ 
+@media only screen and (max-width: 1065px){
 
-    .desktop{
-        display: none;
-    }
-
+    /* ############ fonts ############ */
 
     h1{
-        font-family: Playfair Display;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 40px;
-        /* identical to box height, or 100% */
-
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.02em;
+        font-size: 110px;
+        margin: 120px 0;
+        width: auto;
+        width: 880px;
     }
 
     h2{
-        font-family: Playfair Display;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 24px;
-        /* identical to box height, or 100% */
-
-        letter-spacing: 0.02em;
-    }
-
-    button{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 16px;
-        /* identical to box height, or 133% */
-
-        display: flex;
-        align-items: center;
-        text-transform: uppercase;
-    }
-
-    ul li p,
-    a{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 10px;
-        line-height: 20px;
-        /* identical to box height, or 200% */
-
-        text-transform: uppercase;
+        font-size: 38px;
     }
 
     p{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 28px;
-        /* identical to box height, or 200% */
-    }
-
-    h3{
-        font-family: Playfair Display;
-        font-style: normal;
-        font-weight: bold;
         font-size: 16px;
-        line-height: 20px;
-        /* identical to box height, or 125% */
-
-        text-align: center;
-        letter-spacing: 0.02em;
     }
 
+    li p,
+    a{
+        font-size: 16px;
+    }
+
+    /* ############ general ############ */
+
+    /* ############ borders ############ */
+
+    /* ############ nav ############ */
+
+    /* ############ main ############ */
+
+    main img{
+        max-width: 736px;
+    }
+
+    main .top{
+        margin-top: 80px;
+    }
+
+    /* ############ article ############ */
+
+    article .top{
+        margin-bottom: -0.5em;
+    }
+
+    article img{
+        max-width: 334px;
+    }
+
+    article .content{
+        margin-bottom: 60px;
+    }
+
+    article .border{
+        margin-top: 80px;
+    }
+
+    /* ############ section ############ */
+
+    section h1{
+        margin-bottom: 100px;
+    }
+
+    section .featured{
+        max-height: 5000px;
+    }
+    
+    section .project{
+        margin-bottom: 80px;
+    }
+
+    section img,
+    section p{
+        max-width: 318px;
+    }
+
+    section .space{
+        width: 52px;
+    }
+
+    /* ############ footer ############ */
+
+    footer h1{
+        margin-top: 160px;
+        margin-bottom: 80px;
+    }
+
+    footer > h2{
+        margin-bottom: 60px;
+    }
+
+    footer .border{
+        margin-top: 120px;
+    }
+}
 
 
-    button{
-        border: none;
-        background-color: black;
-        color: white;
-        /* 25/16 40/16 */
-        padding: 1.333em 8.25em;
+
+
+/* ######## 768 to 640 ######## */
+
+@media only screen and (max-width: 895px){
+
+    /* ############ fonts ############ */
+
+    header nav ul li{
+        display: none;
+    }
+
+    .burger{
+        display: inline;
+    }
+
+    .logo,
+    .burger{
+        margin: 40px;
+    }
+
+    h1{
+        font-size: 80px;
+        margin: 100px 0;
+        width: auto;
+        width: 640px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    li p,
+    a{
+        font-size: 10px;
+    }
+
+    /* ############ general ############ */
+
+    /* ############ borders ############ */
+
+    /* ############ nav ############ */
+
+    /* ############ main ############ */
+
+    main img{
+        max-width: 560px;
+    }
+
+    main .top{
+        margin-top: 60px;
+    }
+
+    /* ############ article ############ */
+
+    article .top{
+        margin-bottom: -0.5em;
+    }
+
+    article img{
+        max-width: 240px;
+    }
+
+    article .content{
+        margin-bottom: 60px;
+    }
+
+    article .border{
+        margin-top: 80px;
+    }
+
+    /* ############ section ############ */
+
+    section h1{
+        margin-bottom: 80px;
+    }
+
+    section .featured{
+        max-height: 4000px;
+    }
+    
+    section .project{
+        margin-bottom: 60px;
+    }
+
+    section img,
+    section p{
+        max-width: 240px;
+    }
+
+    section .space{
+        width: 32px;
+    }
+
+    /* ############ footer ############ */
+
+    footer h1{
+        margin-top: 140px;
+        margin-bottom: 60px;
+    }
+
+    footer > h2{
+        margin-bottom: 40px;
+    }
+
+    footer .border{
+        margin-top: 60px;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* ######## 640 to 320 ######## */
+
+@media only screen and (max-width: 640px){
+
+    /* ############ fonts ############ */
+
+    header nav ul li{
+        display: none;
+    }
+
+    .burger{
+        display: inline;
+    }
+
+    .logo,
+    .burger{
+        margin: 20px;
+        margin: 6.250vw;
+    }
+
+    h1{
+        font-size: 40px;
+        font-size: 12.500vw;
+        margin: 40px 0;
+        margin: 12.500vw 0;
+        width: auto;
+        width: 280px;
+        width: 87.500vw;
+    }
+
+    h2{
+        font-size: 24px;
+        font-size: 7.500vw;
+    }
+
+    p{
+        font-size: 14px;
+        font-size: 4.375vw;
+    }
+
+    li p,
+    a{
+        font-size: 10px;
+        font-size: 3.125vw;
     }
 
     ul li h2{
@@ -114,134 +274,116 @@
         font-style: normal;
         font-weight: 500;
         font-size: 10px;
-        line-height: 20px;
-        /* identical to box height, or 200% */
-
+        font-size: 3.125vw;
+        line-height: 2em;
+        
         text-transform: uppercase;
     }
 
-
-    li{
-        /* background-color: red; */
+    .logo img{
+        width: 52px;
+        width: 16.250vw;
+        /* width: max(71px, 4.931vw); */
     }
 
-    main ul,
-    article ul,
-    footer ul{
-        /* background-color: pink; */
-        width: 280px;
+    /* ############ general ############ */
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
         display: flex;
-        align-content: flex-end;
-        justify-content: flex-end;
-        justify-content: space-between;
-
     }
 
+    /* ############ borders ############ */
 
-/* ################ header ################ */
+    /* ############ nav ############ */
 
-    header nav{    
-        /* background-color: red; */
+    nav{
         height: 60px;
-
+        height: 18.750vw;
     }
 
-    header nav ul li:not(.burger){
-        background-color: blue;
-        display: none;
-    }
-
-/* ################ main ################ */
-
-
-
-
-    main .vertical{
-        display: none;
-    }
+    /* ############ main ############ */
 
     main img{
-        width: 100%;
-        width: 280px
+        max-width: 280px;
+        max-width: 87.500vw;
     }
 
-    main .space{
-        width: 0px;
+    main .top{
+        margin-top: 40px;
+        margin-top: 12.500vw;
     }
 
-    main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-
-    main ul li h2{
+    main .mobile{
         margin-bottom: 34px;
+        margin-bottom: 10.625vw;
     }
 
+    /* ############ article ############ */
 
-
-/* ################ article ################ */
-
-    article{
-        width: 280px;
-    }
-
-    article .content{
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+    article .top{
+        margin-bottom: -0.5em;
     }
 
     article img{
-        width: 100%;
-        width: 280px
+        max-width: 280px;
+        max-width: 87.500vw;
     }
 
-    article .content p{
+    article p{
+        margin: 0;
+        margin-top: 16px;
+        margin-top: 5vw;
+    }
+
+    article .content{
         width: 280px;
-        padding-top: 16px;
+        width: 87.500vw;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 32px;
+        margin-bottom: 10vw;
     }
 
-    article .space{
-        width: 0px;
+    article .border{
+        margin-top: 40px;
+        margin-top: 12.500vw;
     }
 
-    article .top{    
-        margin-bottom: -0.525em;
+    
+
+    /* ############ section ############ */
+
+    section h1{
+        margin-bottom: 40px;
+        margin-bottom: 12.500vw;
     }
 
-    article > p{
-        margin: 16px 0 0 0;
+    section .asymmetric{
+        display: none;
     }
-
-
-
-    article ul li{
-        /* background-color: red; */
-        /* padding: 40px 0; */
-    }
-
-
-/* ################ section ################ */
 
     section .featured{
-        flex-wrap: nowrap;
-        max-height: 100%;
-        width: 280px;
+        max-height: 40000px;
     }
-
-    section img{
-        width: 100%;
-    }
-
+    
     section .project{
-        width: 100%;
+        margin-bottom: 48px;
+        margin-bottom: 15vw;
         flex-direction: column;
+    }
+
+    section img,
+    section p{
+        max-width: 280px;
+        max-width: 87.500vw;
+    }
+
+    section .space{
+        justify-content: flex-start;
     }
 
     section .vertical{
@@ -249,125 +391,313 @@
         transform: rotate(0deg);
     }
 
-    section .space{
-        /* background-color: red; */
-        justify-content: flex-start;
+    section .vertical p{
+        padding: 0;
+        margin-bottom: 0.5em;
     }
-
-    .featured > :nth-child(1){ display: none; }
-
-    .featured > :nth-child(2n+1){ order: 1; }
-    .featured > :nth-child(2n){ order: 2; }
 
     .featured > :nth-child(1n+1){ order: 1; }
     .featured > :nth-child(1n){ order: 2; }
 
-
-    section .vertical a{
-        padding: 0;
-    }
-
-    section .project{
-        margin-bottom: 48px;
-    }
-
-    section ul li{
-        padding-bottom: 8px; 
-    }
-
-
-
-
-/* ################ footer ################ */
-
-    footer h2{
-        font-family: Playfair Display;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
-        /* identical to box height, or 125% */
-
-        text-align: center;
-        letter-spacing: 0.02em;
-    }
-
-    footer h1,
-    footer h2,
-    footer > ul li,
-    footer p{
-        /* background-color: red; */
-        padding: 0;
-        margin: 0;
-    }
+    /* ############ footer ############ */
 
     footer h1{
-        /* background-color: red; */
         margin-top: 80px;
+        margin-top: 25vw;
+        margin-bottom: 32px;
+        margin-bottom: 10vw;
     }
 
     footer > h2{
-        margin: 32px;
+        font-size: 16px;
+        font-size: 5vw;
+        margin-bottom: 32px;
+        margin-bottom: 10vw;
     }
 
-    footer > ul li{
-        margin-bottom: 40px;
+    footer .border{
+        margin-top: 40px;
+        margin-top: 12.500vw;
     }
-
-
-
-
-
-
-
-    
 
 
 
     footer nav{
-        height: 248px;
         width: 280px;
-        /* height: 500px; */
-        display: block;
+        width: 87.500vw;
+        height: 180px;
+        height: 56.250vw;
 
         display: flex;
         flex-direction: column;
         align-content: flex-start;
-        /* justify-content: space-between; */
-        justify-content: flex-start;
-
-        padding-top: 24px;
-        height: 224px;
-    }
-
-    footer nav a{
-        padding-left: 0;
-        padding: 1.6em 0;
-        
-    }
-
-    footer nav ul{
-        display: flex;
         justify-content: space-between;
+        align-items: flex-start;
+
+        margin-top: 40px;
+        margin-top: 12.500vw;
+        margin-bottom: 80px;
+        margin-bottom: 25vw;
     }
 
     footer nav > :nth-child(1){ order: 2; }
     footer nav > :nth-child(2){ order: 1; }
     footer nav > :nth-child(3){ order: 3; }
 
+    footer nav ul li a:not(.cv),
+    footer nav a{
+        padding: 0;
+        margin: 0;
+    }
+
+    footer nav ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu nav{
+        height: 60px;
+        height: 18.750vw;
+    }
+
+    .menu .cv{
+        width: 280px;
+        width: 87.500vw;
+        margin-bottom: 20px;
+        margin-bottom: 6.250vw;
+    }
+
+
+
+
+
+
 
 
 }
 
 
-/*
 
 
-nav li a{
-    padding: 2.7em 1.87em;
-    padding: 1.7em 1.35em;
-    padding: 2.66em 1.9em;
-    padding: 2.6em 1.89em;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ######## 640 to 320 ######## */
+
+@media only screen and (max-width: 319px){
+
+    /* ############ fonts ############ */
+
+    header nav ul li{
+        display: none;
+    }
+
+    .burger{
+        display: inline;
+    }
+
+    .logo,
+    .burger{
+        margin: 20px;
+    }
+
+    h1{
+        font-size: 40px;
+        margin: 40px 0;
+        width: auto;
+        width: 280px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    li p,
+    a{
+        font-size: 10px;
+    }
+
+    ul li h2{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 2em;
+        
+        text-transform: uppercase;
+    }
+
+    .logo img{
+        width: 52px;
+        /* width: max(71px, 4.931vw); */
+    }
+
+    /* ############ general ############ */
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+    }
+
+    /* ############ borders ############ */
+
+    /* ############ nav ############ */
+
+    nav{
+        height: 60px;
+    }
+
+    /* ############ main ############ */
+
+    main img{
+        max-width: 280px;
+    }
+
+    main .top{
+        margin-top: 40px;
+    }
+
+    main .mobile{
+        margin-bottom: 34px;
+    }
+
+    /* ############ article ############ */
+
+    article .top{
+        margin-bottom: -0.5em;
+    }
+
+    article img{
+        max-width: 280px;
+    }
+
+    article p{
+        margin: 0;
+        margin-top: 16px;
+    }
+
+    article .content{
+        width: 280px;
+        margin-bottom: 60px;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    article .border{
+        margin-top: 40px;
+    }
+
+    
+
+    /* ############ section ############ */
+
+    section h1{
+        margin-bottom: 40px;
+    }
+
+    section .asymmetric{
+        display: none;
+    }
+
+    section .featured{
+        max-height: 40000px;
+    }
+    
+    section .project{
+        margin-bottom: 48px;
+        flex-direction: column;
+    }
+
+    section img,
+    section p{
+        max-width: 280px;
+    }
+
+    section .space{
+        justify-content: flex-start;
+    }
+
+    section .vertical{
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+    }
+
+    section .vertical p{
+        padding: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .featured > :nth-child(1n+1){ order: 1; }
+    .featured > :nth-child(1n){ order: 2; }
+
+    /* ############ footer ############ */
+
+    footer h1{
+        margin-top: 80px;
+        margin-bottom: 32px;
+    }
+
+    footer > h2{
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    footer .border{
+        margin-top: 40px;
+    }
+
+
+
+    footer nav{
+        width: 280px;
+        height: 180px;
+
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+
+    footer nav > :nth-child(1){ order: 2; }
+    footer nav > :nth-child(2){ order: 1; }
+    footer nav > :nth-child(3){ order: 3; }
+
+    footer nav ul li a:not(.cv),
+    footer nav a{
+        padding: 0;
+        margin: 0;
+    }
+
+    footer nav ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
-*/
+
+

@@ -1,0 +1,77 @@
+
+
+
+
+/* ############ color ############ */
+
+.menu .border,
+.border{
+    border-top: 2px solid blue;
+    border-top: 2px solid #222222;
+}
+
+.menu .border,
+.border,
+h1,
+h2,
+a,
+p{
+    color: blue;
+    color: #222222;
+}
+
+.menu .cv,
+header .cv{
+    background-color: green;
+    background-color: #222222;
+}
+
+/* header, */
+.menu,
+main,
+footer,
+footer nav{
+    background-color: red;
+    background-color: #E0E0E0;
+}
+
+header > nav{
+    /* background-color: rgba(224, 224, 224, .25) */
+}
+
+
+
+
+/* ############ hover ############ */
+
+main ul li .cv:hover{
+    background-color: blue;
+    background-color: rgba(56 56 56);
+}
+
+header .cv:hover{
+    background-color: blue;
+    background-color: rgba(56 56 56);
+}
+
+header nav li a:not(.cv):hover,
+footer nav li a:hover{
+    border-bottom: 2px solid blue;
+    border-bottom: max(2px, 0.139vw) solid #222222;
+}
+
+.vertical a:hover{
+    border-left: 2px solid blue;
+    border-left: max(2px, 0.139vw) solid #222222;
+}
+
+li a h2:hover,
+section h2:hover{
+    border-bottom: 2px solid blue;
+    border-bottom: max(2px, 0.139vw) solid #222222;
+}
+
+.menu ul li h1:hover{
+    border-bottom: 2px solid blue;
+    border-bottom: max(2px, 0.139vw) solid #222222;
+}
