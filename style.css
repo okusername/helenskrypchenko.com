@@ -88,9 +88,6 @@ button{
     /* width: max(71px, 4.931vw); */
 }
 
-
-
-
 /* ############ general ############ */
 
 *{
@@ -146,9 +143,6 @@ ul li a{
     text-transform: uppercase;
 }
 
-
-
-
 /* ############ borders ############ */
 
 header .border{
@@ -162,9 +156,6 @@ article .border{
     width: 1108px;
     width: min(90%, 1108px);
 }
-
-
-
 
 /* ############ nav ############ */
 
@@ -195,9 +186,6 @@ header .cv{
     margin-left: 166px;
     margin-left: 11.528vw;
 }
-
-
-
 
 /* ############ main ############ */
 
@@ -239,9 +227,6 @@ main .bottom{
     /* position: relative must to use with z-index */
 }
 
-
-
-
 /* ############ article ############ */
 
 article .top{
@@ -275,9 +260,6 @@ article .border{
     margin-top: 100px;
     /* margin-top: max(80px, 6.944vw); */
 }
-
-
-
 
 /* ############ section ############ */
 
@@ -362,9 +344,6 @@ section h2{
     display: none;
 }
 
-
-
-
 /* ############ footer ############ */
 
 footer{
@@ -392,9 +371,6 @@ footer .border{
     /* margin-top: max(60px, 10.417vw) */
 }
 
-
-
-
 /* ############ menu ############ */
 
 .menu {
@@ -402,12 +378,10 @@ footer .border{
     top: 0;
     width: 100%;
     height: 100%;
-    /* background-color: #E0E0E0; */
     z-index: 10000;
-    display: flex;
+    display: block;
     display: none;
-    flex-direction: column;
-    align-items: center;
+    background-color: gray;
 }
 
 .menu nav{
@@ -420,11 +394,14 @@ footer .border{
 }
 
 .menu main{
-    height: 100%;
+    height: 85%;
     width: min-content;
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -433,12 +410,14 @@ footer .border{
     flex-direction: column;
     align-items: flex-start;
     margin-top: 20px;
+    width: 560px;
 }
 
 .menu ul li h1{
     width: auto;
     margin: 0.25em 0;
     text-transform: capitalize;
+    /* font-size: 40px; */
 }
 
 .menu ul li h2{
@@ -446,9 +425,11 @@ footer .border{
     padding: 0;
 }
 
+
 .menu .cv{
     width: 560px;
     height: 70px;
+    min-height: 70px;
 
     display: flex;
     align-items: center;
@@ -457,11 +438,8 @@ footer .border{
     font-size: 16px;
     background-color: black;
     color: white;
-    margin-bottom: 40px;
+    margin-bottom: 1.5em;
 }
-
-
-
 
 /* ############ dynamic ############ */
 
@@ -476,31 +454,4 @@ footer .border{
 #dynamic header{
     background-color: red;
     background-color: rgba(224, 224, 224, .25)
-}
-
-
-
-
-/* ############ padding ############ */
-
-header nav li a:not(.cv),
-footer nav li a{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    border-bottom: 2px solid transparent;
-}
-
-main .vertical p,
-.vertical a{
-    padding-right: 0.5em;
-    padding-left: 0.5em;
-    border-left: 2px solid transparent;
-}
-
-.menu ul li h1,
-li h2,
-section h2{
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    border-bottom: 2px solid transparent;
 }

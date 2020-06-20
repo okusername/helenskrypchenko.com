@@ -35,43 +35,71 @@ footer nav{
     background-color: #E0E0E0;
 }
 
-header > nav{
-    /* background-color: rgba(224, 224, 224, .25) */
-}
-
 
 
 
 /* ############ hover ############ */
 
-main ul li .cv:hover{
-    background-color: blue;
-    background-color: rgba(56 56 56);
-}
+@media only screen and (min-width: 500px){
 
-header .cv:hover{
-    background-color: blue;
-    background-color: rgba(56 56 56);
-}
+    /* ############ padding ############ */
 
-header nav li a:not(.cv):hover,
-footer nav li a:hover{
-    border-bottom: 2px solid blue;
-    border-bottom: max(2px, 0.139vw) solid #222222;
-}
+    header nav li a:not(.cv),
+    footer nav li a{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border-bottom: 2px solid transparent;
+    }
 
-.vertical a:hover{
-    border-left: 2px solid blue;
-    border-left: max(2px, 0.139vw) solid #222222;
-}
+    main .vertical p,
+    .vertical a{
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        border-left: 2px solid transparent;
+    }
 
-li a h2:hover,
-section h2:hover{
-    border-bottom: 2px solid blue;
-    border-bottom: max(2px, 0.139vw) solid #222222;
-}
+    .menu ul li h1,
+    li h2,
+    section h2{
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        border-bottom: 2px solid transparent;
+    }
 
-.menu ul li h1:hover{
-    border-bottom: 2px solid blue;
-    border-bottom: max(2px, 0.139vw) solid #222222;
+
+
+    
+    /* ############ hover ############ */
+
+    main ul li .cv:hover{
+        background-color: blue;
+        background-color: rgba(56 56 56);
+    }
+
+    header .cv:hover{
+        background-color: blue;
+        background-color: rgba(56 56 56);
+    }
+
+    header nav li a:not(.cv):hover,
+    footer nav li a:hover{
+        border-bottom: 2px solid blue;
+        border-bottom: max(2px, 0.139vw) solid #222222;
+    }
+
+    .vertical a:hover{
+        border-left: 2px solid blue;
+        border-left: max(2px, 0.139vw) solid #222222;
+    }
+
+    li a h2:hover,
+    section h2:hover{
+        border-bottom: 2px solid blue;
+        border-bottom: max(2px, 0.139vw) solid #222222;
+    }
+
+    .menu ul li h1:hover{
+        border-bottom: 2px solid blue;
+        border-bottom: max(2px, 0.139vw) solid #222222;
+    }
 }

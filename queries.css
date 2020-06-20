@@ -219,13 +219,9 @@
 
 
 
+/* ######## 640 to 375 ######## */
 
-
-
-
-/* ######## 640 to 320 ######## */
-
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 375px){
 
     /* ############ fonts ############ */
 
@@ -240,50 +236,41 @@
     .logo,
     .burger{
         margin: 20px;
-        margin: 6.250vw;
     }
 
     h1{
-        font-size: 40px;
-        font-size: 12.500vw;
+        font-size: 48px;
         margin: 40px 0;
-        margin: 12.500vw 0;
         width: auto;
-        width: 280px;
-        width: 87.500vw;
+        width: 335px;
     }
 
     h2{
         font-size: 24px;
-        font-size: 7.500vw;
     }
 
     p{
         font-size: 14px;
-        font-size: 4.375vw;
     }
 
     li p,
     a{
-        font-size: 10px;
-        font-size: 3.125vw;
+        font-size: 12px;
     }
 
     ul li h2{
         font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
-        font-size: 10px;
-        font-size: 3.125vw;
+        font-size: 12px;
         line-height: 2em;
         
         text-transform: uppercase;
+        padding: 0;
     }
 
     .logo img{
         width: 52px;
-        width: 16.250vw;
-        /* width: max(71px, 4.931vw); */
     }
 
     /* ############ general ############ */
@@ -298,28 +285,30 @@
 
     /* ############ borders ############ */
 
+    footer nav,
+    footer .border,
+    article .border{
+        width: 335px;
+    }
+
     /* ############ nav ############ */
 
     nav{
         height: 60px;
-        height: 18.750vw;
     }
 
     /* ############ main ############ */
 
     main img{
-        max-width: 280px;
-        max-width: 87.500vw;
+        max-width: 335px;
     }
 
     main .top{
         margin-top: 40px;
-        margin-top: 12.500vw;
     }
 
     main .mobile{
-        margin-bottom: 34px;
-        margin-bottom: 10.625vw;
+        margin-bottom: 50px;
     }
 
     /* ############ article ############ */
@@ -329,37 +318,29 @@
     }
 
     article img{
-        max-width: 280px;
-        max-width: 87.500vw;
+        max-width: 335px;
     }
 
     article p{
         margin: 0;
         margin-top: 16px;
-        margin-top: 5vw;
     }
 
     article .content{
-        width: 280px;
-        width: 87.500vw;
+        width: 335px;
         flex-direction: column-reverse;
         align-items: center;
         margin-bottom: 32px;
-        margin-bottom: 10vw;
     }
 
     article .border{
         margin-top: 40px;
-        margin-top: 12.500vw;
     }
-
-    
 
     /* ############ section ############ */
 
     section h1{
         margin-bottom: 40px;
-        margin-bottom: 12.500vw;
     }
 
     section .asymmetric{
@@ -368,18 +349,20 @@
 
     section .featured{
         max-height: 40000px;
+        align-items: center;
     }
     
     section .project{
         margin-bottom: 48px;
-        margin-bottom: 15vw;
         flex-direction: column;
+
     }
 
+    section .project,
+    section .content,
     section img,
     section p{
-        max-width: 280px;
-        max-width: 87.500vw;
+        max-width: 335px;
     }
 
     section .space{
@@ -403,41 +386,28 @@
 
     footer h1{
         margin-top: 80px;
-        margin-top: 25vw;
-        margin-bottom: 32px;
-        margin-bottom: 10vw;
+        margin-bottom: 40px;
     }
 
     footer > h2{
         font-size: 16px;
-        font-size: 5vw;
-        margin-bottom: 32px;
-        margin-bottom: 10vw;
+        margin-bottom: 40px;
     }
 
     footer .border{
         margin-top: 40px;
-        margin-top: 12.500vw;
     }
 
-
-
     footer nav{
-        width: 280px;
-        width: 87.500vw;
-        height: 180px;
-        height: 56.250vw;
+        width: 335px;
+        height: auto;
 
         display: flex;
         flex-direction: column;
-        align-content: flex-start;
-        justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
 
         margin-top: 40px;
-        margin-top: 12.500vw;
-        margin-bottom: 80px;
-        margin-bottom: 25vw;
+        margin-bottom: 40px;
     }
 
     footer nav > :nth-child(1){ order: 2; }
@@ -456,24 +426,30 @@
         justify-content: space-between;
     }
 
+    .menu .cv,
+    footer .cv{
+        width: 335px;
+        height: 52px;
+        min-height: 52px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        font-size: 16px;
+        background-color: black;
+        color: white;
+        margin: 40px 0;
+    }
+
     .menu nav{
         height: 60px;
-        height: 18.750vw;
     }
-
+    
+    .menu ul,
     .menu .cv{
-        width: 280px;
-        width: 87.500vw;
-        margin-bottom: 20px;
-        margin-bottom: 6.250vw;
+        width: 335px;
     }
-
-
-
-
-
-
-
 
 }
 
@@ -483,20 +459,9 @@
 
 
 
+/* ######## 640 to 375 ######## */
 
-
-
-
-
-
-
-
-
-
-
-/* ######## 640 to 320 ######## */
-
-@media only screen and (max-width: 319px){
+@media only screen and (max-width: 320px){
 
     /* ############ fonts ############ */
 
@@ -545,7 +510,6 @@
 
     .logo img{
         width: 52px;
-        /* width: max(71px, 4.931vw); */
     }
 
     /* ############ general ############ */
@@ -559,6 +523,12 @@
     }
 
     /* ############ borders ############ */
+
+    footer nav,
+    footer .border,
+    article .border{
+        width: 280px;
+    }
 
     /* ############ nav ############ */
 
@@ -607,8 +577,6 @@
         margin-top: 40px;
     }
 
-    
-
     /* ############ section ############ */
 
     section h1{
@@ -621,13 +589,17 @@
 
     section .featured{
         max-height: 40000px;
+        align-items: center;
     }
     
     section .project{
         margin-bottom: 48px;
         flex-direction: column;
+
     }
 
+    section .project,
+    section .content,
     section img,
     section p{
         max-width: 280px;
@@ -666,20 +638,16 @@
         margin-top: 40px;
     }
 
-
-
     footer nav{
         width: 280px;
         height: 180px;
 
         display: flex;
         flex-direction: column;
-        align-content: flex-start;
-        justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
 
         margin-top: 40px;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
     }
 
     footer nav > :nth-child(1){ order: 2; }
@@ -697,6 +665,32 @@
         display: flex;
         justify-content: space-between;
     }
+
+    .menu .cv,
+    footer .cv{
+        width: 280px;
+        height: 52px;
+        min-height: 52px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        font-size: 16px;
+        background-color: black;
+        color: white;
+        margin: 40px 0;
+    }
+
+    .menu nav{
+        height: 60px;
+    }
+    
+    .menu ul,
+    .menu .cv{
+        width: 280px;
+    }
+
 }
 
 
