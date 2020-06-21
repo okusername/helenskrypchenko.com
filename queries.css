@@ -9,8 +9,7 @@
     h1{
         font-size: 110px;
         margin: 120px 0;
-        width: auto;
-        width: 880px;
+
     }
 
     h2{
@@ -29,6 +28,13 @@
     /* ############ general ############ */
 
     /* ############ borders ############ */
+
+    h1,
+    footer nav,
+    footer .border,
+    article .border{
+        width: 880px;
+    }
 
     /* ############ nav ############ */
 
@@ -133,8 +139,6 @@
     h1{
         font-size: 80px;
         margin: 100px 0;
-        width: auto;
-        width: 640px;
     }
 
     h2{
@@ -157,6 +161,13 @@
     }
 
     /* ############ borders ############ */
+
+    h1,
+    footer nav,
+    footer .border,
+    article .border{
+        width: 640px;
+    }
 
     /* ############ nav ############ */
 
@@ -233,7 +244,7 @@
 
 /* ######## 640 to 375 ######## */
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 645px){
 
     /* ############ fonts ############ */
 
@@ -255,8 +266,6 @@
     h1{
         font-size: 48px;
         margin: 40px 0;
-        width: auto;
-        width: 335px;
     }
 
     h2{
@@ -299,6 +308,7 @@
 
     /* ############ borders ############ */
 
+    h1,
     footer nav,
     footer .border,
     article .border{
@@ -496,8 +506,6 @@
     h1{
         font-size: 40px;
         margin: 40px 0;
-        width: auto;
-        width: 280px;
     }
 
     h2{
@@ -540,6 +548,7 @@
 
     /* ############ borders ############ */
 
+    h1,
     footer nav,
     footer .border,
     article .border{
