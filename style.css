@@ -132,7 +132,7 @@ ul li a{
 .mockup{
     width: 100%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
     overflow: hidden;
     display: flex;
 }
