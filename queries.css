@@ -1,6 +1,6 @@
+
+
 /* ######## 1024 to 768 ######## */
-
-
 
 @media only screen and (max-width: 1065px){
 
@@ -97,19 +97,20 @@
     footer .border{
         margin-top: 120px;
     }
+
 }
 
-
-
-
-/* ######## 768 to 640 ######## */
+/* ######## 768 and up ######## */
 
 @media only screen and (min-width: 895px){
-    #menu{
-        /* background-color: red; */
+
+    .burger,
+    .mobile{
         display: none;
     }
 }
+
+/* ######## 768 to 640 ######## */
 
 @media only screen and (max-width: 895px){
 
@@ -123,6 +124,7 @@
         display: inline;
     }
 
+    .close,
     .logo,
     .burger{
         margin: 40px;
@@ -149,6 +151,10 @@
     }
 
     /* ############ general ############ */
+
+    .mobile{
+        display: none;
+    }
 
     /* ############ borders ############ */
 
@@ -235,10 +241,12 @@
         display: none;
     }
 
+    .close,
     .burger{
         display: inline;
     }
 
+    .close,
     .logo,
     .burger{
         margin: 20px;
@@ -479,6 +487,7 @@
         display: inline;
     }
 
+    .close,
     .logo,
     .burger{
         margin: 20px;

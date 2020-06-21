@@ -1,3 +1,7 @@
+
+
+
+
 /* ############ fonts ############ */
 
 h1{
@@ -5,13 +9,11 @@ h1{
     font-style: normal;
     font-weight: bold;
     font-size: 132px;
-    /* font-size: max(80px, 9.167vw); */
     line-height: 1em;
     
     letter-spacing: 0.02em;
 
     margin: 150px 0;
-    /* margin: max(100px, 6.944vw) */
 }
 
 /* extra */
@@ -23,7 +25,6 @@ h1{
 
     width: auto;
     width: 1050px;
-    /* width: max(640px, 76vw); */
 }
 
 h2{
@@ -31,7 +32,6 @@ h2{
     font-style: normal;
     font-weight: bold;
     font-size: 42px;
-    /* font-size: max(24px, 2.917vw); */
     line-height: 0.95em;
     
     letter-spacing: 0.02em;
@@ -44,7 +44,6 @@ p{
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    /* font-size: max(14px, 1.250vw); */
     line-height: 1.56em;
 }
 
@@ -55,7 +54,6 @@ a{
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    /* font-size: max(10px, 1.111vw); */
     line-height: 1.25em;
 
     text-transform: uppercase;
@@ -76,13 +74,14 @@ button{
 
 .cv img{
     width: 24px;
-    /* width: max(24px, 1.667vw); */
 }
 
 .logo img{
     width: 71px;
-    /* width: max(71px, 4.931vw); */
 }
+
+
+
 
 /* ############ general ############ */
 
@@ -106,7 +105,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* overflow-anchor: none; */
 }
 
 header,
@@ -121,7 +119,7 @@ a{
 
 .burger,
 .mobile{
-    display: none;
+    /* display: none; */
 }
 
 a,
@@ -138,6 +136,9 @@ ul li a{
     align-self: flex-start;
     text-transform: uppercase;
 }
+
+
+
 
 /* ############ borders ############ */
 
@@ -158,7 +159,6 @@ article .border{
 nav{
     width: 100%;
     height: 100px;
-    /* height: max(100px, 6.944vw); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -172,16 +172,23 @@ nav ul li a:not(.cv){
 header .cv{
     padding: 38px 28px;
     margin-left: 2vw;
-    /* padding: max(38px, 2.639vw) max(28px, 1.944vw); */
     background-color: black;
     color: white;
     
 }
 
+
 .logo{
     margin-left: 166px;
     margin-left: 11.528vw;
 }
+
+.close{
+    margin-right: 166px;
+    margin-right: 11.528vw;
+}
+
+
 
 /* ############ main ############ */
 
@@ -201,12 +208,10 @@ main .space{
 
 main img{
     max-width: 824px;
-    /* max-width: max(560px, 57.222vw); */
 }
 
 main .top{
     margin-top: 80px;
-    /* margin-top: max(60px, 5.556vw); */
 }
 
 main .top{
@@ -223,6 +228,9 @@ main .bottom{
     /* position: relative must to use with z-index */
 }
 
+
+
+
 /* ############ article ############ */
 
 article .top{
@@ -234,11 +242,9 @@ article .top{
 
 article img{
     max-width: 432px;
-    /* max-width: max(240px, 30vw); */
 }
 
 article p{
-    /* margin: 0 5em 2em 0 ; */
     margin-right: 2vw;
     margin-bottom: 1vw;
 }
@@ -249,13 +255,14 @@ article .content{
     justify-content: center;
     width: 100%;
     margin-bottom: 80px;
-    /* margin-bottom: max(60px, 5.556vw); */
 }
 
 article .border{
     margin-top: 100px;
-    /* margin-top: max(80px, 6.944vw); */
 }
+
+
+
 
 /* ############ section ############ */
 
@@ -276,9 +283,6 @@ section .featured{
     flex-direction: column; 
     flex-wrap: wrap;
     align-content: center;
-
-
-    /* max-height: max(4200px, 444.444vw); */
 }
 
 section .featured{ direction: rtl; }
@@ -296,8 +300,6 @@ section .asymmetric{
 section .project{
     margin-bottom: 100px;
     display: flex;
-
-    /* margin-bottom: max(60px, 6.944vw); */
 }
 
 section .content{
@@ -314,7 +316,6 @@ section a{
 section img,
 section p{
     max-width: 416px;
-    /* max-width: max(240px, 28.889vw); */
 }
 
 section .vertical p{
@@ -325,7 +326,6 @@ section .vertical p{
 
 section .space{
     width: 52px;
-    /* width: max(34px, 3.611vw); */
     display: flex;
     align-content: flex-end;
     justify-content: flex-end;
@@ -340,6 +340,9 @@ section h2{
     display: none;
 }
 
+
+
+
 /* ############ footer ############ */
 
 footer{
@@ -348,9 +351,7 @@ footer{
 
 footer h1{
     margin-top: 200px;
-    /* margin-top: max(140px, 13.889vw); */
     margin-bottom: 100px;
-    /* margin-bottom: max(60px, 6.944vw); */
 }
 
 footer h2{
@@ -359,12 +360,10 @@ footer h2{
 
 footer > h2{
     margin-bottom: 60px;
-    /* margin-bottom: max(40px, 4.167vw); */
 }
 
 footer .border{
     margin-top: 150px;
-    /* margin-top: max(60px, 10.417vw) */
 }
 
 
@@ -408,16 +407,6 @@ section h2{
     z-index: 10000;
     display: block;
     display: none;
-    background-color: gray;
-}
-
-.menu nav{
-    height: 100px;
-}
-
-.menu .border{
-    height: 1px;
-    width: 100%;
 }
 
 .menu main{
@@ -444,7 +433,6 @@ section h2{
     width: auto;
     margin: 0.25em 0;
     text-transform: capitalize;
-    /* font-size: 40px; */
 }
 
 .menu ul li h2{
@@ -467,6 +455,7 @@ section h2{
     color: white;
     margin-bottom: 1.5em;
 }
+
 
 
 
