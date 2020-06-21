@@ -1,8 +1,7 @@
-
-
-
 /* ######## 1024 to 768 ######## */
- 
+
+
+
 @media only screen and (max-width: 1065px){
 
     /* ############ fonts ############ */
@@ -104,6 +103,13 @@
 
 
 /* ######## 768 to 640 ######## */
+
+@media only screen and (min-width: 895px){
+    #menu{
+        /* background-color: red; */
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 895px){
 
@@ -693,6 +699,3 @@
     }
 
 }
-
-
-
