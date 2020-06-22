@@ -56,13 +56,13 @@
             </div>
             
             <div class="content">
-                <img class="mySlides" src="img/slider/image 10.png">
-                <img class="mySlides" src="img/slider/image 9.png">
-                <img class="mySlides" src="img/slider/image 8.png">
-                <img class="mySlides" src="img/slider/image 7.png">  
-                <img class="mySlides" src="img/slider/image 6.png">
-                <img class="mySlides" src="img/slider/image 5.png">
-                <img class="mySlides" src="img/slider/image 4.png">
+                <img class="mySlides" src="img/slider/image 10.png" onload="mySlidesLoaded()">
+                <img class="mySlides" src="img/slider/image 9.png" onload="mySlidesLoaded()">
+                <img class="mySlides" src="img/slider/image 8.png" onload="mySlidesLoaded()">
+                <img class="mySlides" src="img/slider/image 7.png" onload="mySlidesLoaded()">  
+                <img class="mySlides" src="img/slider/image 6.png" onload="mySlidesLoaded()">
+                <img class="mySlides" src="img/slider/image 5.png" onload="mySlidesLoaded()">
+                <img class="mySlides" src="img/slider/image 4.png" onload="mySlidesLoaded()">
             </div>
 
             <!-- <img class="mySlides" src="img/slider/image 4.png"> -->
@@ -694,24 +694,36 @@
 
     </script>
 
-    <script>
+<script>
 
-        var myIndex = 0;
-        carousel();
-
-        function carousel(){
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 1000); // Change image every 1 seconds
+    var count = 1;
+    function mySlidesLoaded(){
+        ++count;
+        if (count === 8){
+            console.log(count);
+            setTimeout(carousel, 500);
         }
-        
-    </script>
+    }
+
+    var myIndex = 0;
+    carousel();
+
+    function carousel(){
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+
+        if (count === 8){
+            setTimeout(carousel, 500);
+        }
+    }
+    
+</script>
 
 
 
