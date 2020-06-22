@@ -55,23 +55,24 @@ footer nav{
     header nav li a:not(.cv):hover,
     footer nav li a:hover{
         border-bottom: 2px solid blue;
-        border-bottom: max(2px, 0.139vw) solid #222222;
+        border-bottom: 2px solid #222222;
+
     }
 
     .vertical a:hover{
         border-left: 2px solid blue;
-        border-left: max(2px, 0.139vw) solid #222222;
+        border-left: 2px solid #222222;
     }
 
     li a h2:hover,
     section h2:hover{
-        border-bottom: 2px solid blue;
-        border-bottom: max(2px, 0.139vw) solid #222222;
+        border-bottom: 2px solid blue:
+        border-bottom: 2px solid #222222;
     }
 
     .menu ul li h1:hover{
         border-bottom: 2px solid blue;
-        border-bottom: max(2px, 0.139vw) solid #222222;
+        border-bottom: 2px solid #222222;
     }
 
     .mockup img:hover{
