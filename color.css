@@ -1,3 +1,7 @@
+
+
+
+
 /* ############ color ############ */
 
 .menu .border,
@@ -70,5 +74,8 @@ footer nav{
         border-bottom: max(2px, 0.139vw) solid #222222;
     }
 
+    .mockup img:hover{
+        transform: scale(1.075);
+    }
 
 }

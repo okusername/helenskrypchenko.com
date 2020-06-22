@@ -140,13 +140,10 @@ ul li a{
 .mockup img{
     width: 100%;
     height: 100%;
-    transform: scale(1.025);
     transform: scale(1.005);
     transition: transform 1s ease;
-}
-
-.mockup img:hover{
-    transform: scale(1.075);
+    image-rendering: smooth;
+    image-rendering: high-quality;
 }
 
 
@@ -389,6 +386,7 @@ footer nav li a{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s ease;
 }
 
 main .vertical p,
@@ -396,6 +394,7 @@ main .vertical p,
     padding-right: 0.5em;
     padding-left: 0.5em;
     border-left: 2px solid transparent;
+    transition: border-left 0.5s ease;
 }
 
 .menu ul li h1,
@@ -404,6 +403,7 @@ section h2{
     padding-top: 0.25em;
     padding-bottom: 0.25em;
     border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s ease;
 }
 
 
