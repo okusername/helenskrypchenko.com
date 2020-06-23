@@ -132,7 +132,6 @@ ul li a{
 .mockup{
     width: 100%;
     height: 100%;
-    /* background-color: red; */
     overflow: hidden;
     display: flex;
 }
@@ -144,6 +143,10 @@ ul li a{
     transition: transform 1s ease;
     image-rendering: smooth;
     image-rendering: high-quality;
+}
+
+figure {
+    min-height: 200px;
 }
 
 
@@ -217,7 +220,7 @@ main .space{
 }
 
 main img{
-    max-width: 824px;
+    min-width: 824px;
 }
 
 main .top{
