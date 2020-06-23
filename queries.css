@@ -73,7 +73,7 @@
     }
 
     section .featured{
-        max-height: 5000px;
+        max-height: 4980px;
     }
     
     section .project{
@@ -206,7 +206,7 @@
     }
 
     section .featured{
-        max-height: 4000px;
+        max-height: 3860px;
     }
     
     section .project{
@@ -244,7 +244,7 @@
 
 /* ######## 640 to 375 ######## */
 
-@media only screen and (max-width: 645px){
+@media only screen and (max-width: 654px){
 
     /* ############ fonts ############ */
 

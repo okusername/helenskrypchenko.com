@@ -4,12 +4,11 @@
 
 // CHANGE SLIDES ON MAIN SCREEN
 
-
 var count = 1; 
 
 function mySlidesLoaded(){
     ++count;
-    console.log(count);
+    // console.log(count);
     if (count === 8){
         carousel();
         return count;
@@ -29,8 +28,6 @@ function carousel(){
     x[myIndex-1].style.display = "block";
     setTimeout(carousel, 1000);
 }
-
-
 
 
 

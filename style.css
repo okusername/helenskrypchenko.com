@@ -220,7 +220,7 @@ main .space{
 }
 
 main img{
-    min-width: 824px;
+    max-width: 824px;
 }
 
 main .top{
@@ -289,7 +289,7 @@ section h1{
 }
 
 section .featured{
-    max-height: 6400px;
+    max-height: 6120px;
     /* background-color: pink; */
     width: 100%;
     display: flex;
@@ -483,7 +483,6 @@ section h2{
     position: fixed;
     z-index: 1000;
 }
-
 #dynamic header{
     background-color: red;
     background-color: rgba(224, 224, 224, .25)
