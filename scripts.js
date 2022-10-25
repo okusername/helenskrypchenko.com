@@ -9,7 +9,7 @@ var count = 1;
 function mySlidesLoaded(){
     ++count;
     // console.log(count);
-    if (count === 8){
+    if (count === 7){
         carousel();
         return count;
     }
